@@ -65,7 +65,7 @@ class Writer
             $this->addNewSheet()->export($sheetExport);
         }
 
-        return $this->write($export, $this->temporaryFileFactory->makeLocal(), $writerType);
+        return $this->write($export, $this->temporaryFileFactory->make(), $writerType);
     }
 
     /**
